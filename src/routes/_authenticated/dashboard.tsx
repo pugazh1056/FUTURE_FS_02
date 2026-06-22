@@ -3,6 +3,22 @@ import { useSuspenseQuery, queryOptions } from "@tanstack/react-query";
 import { getDashboardStats } from "@/lib/leads.functions";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Sparkles, PhoneCall, CheckCircle2 } from "lucide-react";
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+  type ChartConfig,
+} from "@/components/ui/chart";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Cell,
+  PieChart,
+  Pie,
+} from "recharts";
 
 const statsQuery = queryOptions({
   queryKey: ["dashboard-stats"],
