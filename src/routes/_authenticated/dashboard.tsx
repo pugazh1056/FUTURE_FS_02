@@ -38,6 +38,11 @@ function Dashboard() {
     { label: "Contacted", value: data.contacted, icon: PhoneCall, accent: "text-amber-600" },
     { label: "Converted", value: data.converted, icon: CheckCircle2, accent: "text-emerald-600" },
   ];
+  const chartData = [
+    { key: "new", label: "New", value: data.new },
+    { key: "contacted", label: "Contacted", value: data.contacted },
+    { key: "converted", label: "Converted", value: data.converted },
+  ];
   return (
     <div className="space-y-6 max-w-6xl">
       <div>
